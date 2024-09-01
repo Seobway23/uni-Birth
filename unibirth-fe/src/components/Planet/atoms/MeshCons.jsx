@@ -114,7 +114,7 @@ const MeshCons = ({
               geometry.deleteAttribute("uv");
               return (
                 <line
-                  frustumCulled={false}
+                  frustumCulled={true}
                   ref={meshRef}
                   key={`line_${i}_${index}`}
                   geometry={geometry}
@@ -133,7 +133,7 @@ const MeshCons = ({
               return (
                 <>
                   <mesh
-                    frustumCulled={false}
+                    frustumCulled={true}
                     ref={meshRef}
                     key={`point_${i}_${index}`}
                     position={[
@@ -161,7 +161,7 @@ const MeshCons = ({
             },
           )}
           <mesh
-            frustumCulled={false}
+            frustumCulled={true}
             key={`position_${groupKey}`}
             position={[
               AllSphereList[i].x,
